@@ -29,8 +29,15 @@ function retornaHP(retorno) {
     pegaTextoHP.innerHTML = `${retorno}`
 }
 
+function informaDano(dano) {
+    const paragrah = document.createElement("P");
+    document.body.appendChild(paragrah);
+    paragrah.innerHTML = `vilão tomou ${dano} de dano`
+}
+
 ataque.addEventListener('click', () => {
-    alert("vilão recebeu 6 de dano")
+    const danoResultante = ze.atk - vilao.def
+    informaDano(danoResultante)
     retornaHP(ze.atacar(vilao))
 })
 
