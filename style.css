@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: aqua;
+    
+}
+
+.ataque, 
+.skill {
+    width: 10rem;
+    height: 3rem;
+}
