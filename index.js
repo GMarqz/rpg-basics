@@ -17,27 +17,38 @@ class Player {
 const ze = new Player(100, 20, 14);
 const vilao = new Player(100, 13, 14)
 
-// Se o player atacar, o seguinte cálculo acontece: player.atk - inimigo.def 
-// Então o resultado será aplicado no hp do inimigo, assim: inimigo.hp - resultado
-// Isso resultará em uma função que retorna um novo valor para HP, assim: function retornaHP(retorno){
-// const pegaTextoHP = document.querySelector('hp')
-// pegaTextoHP.innerHTML = `${retorno}`
-// }
-
 function retornaHP(retorno) {
     const pegaTextoHP = document.querySelector('.hp');
     pegaTextoHP.innerHTML = `${retorno}`
 }
 
 function informaDano(dano) {
+    //element.classList.add("my-class")
     const paragrah = document.createElement("P");
     document.body.appendChild(paragrah);
-    paragrah.innerHTML = `vilão tomou ${dano} de dano`
+    paragrah.classList.add("informa__dano");
 }
+
+// async function exemplo() {
+//     let promessa = new Promise((resolve, reject) => {
+//         setTimeout(() => resolve("finalizado"), 1000);
+//     });
+
+//     let resultado = await promessa;
+//     console.log(resultado); // "finalizado"
+// }
+
+// exemplo();
 
 ataque.addEventListener('click', () => {
     const danoResultante = ze.atk - vilao.def
     informaDano(danoResultante)
+    async function afterInforma(){
+        await informaDano()
+    if(document.querySelector('.sua-classe')){
+        
+        paragrah.textContent = `vilão tomou ${dano} de dano`
+    }}
     retornaHP(ze.atacar(vilao))
 })
 
