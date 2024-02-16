@@ -22,11 +22,15 @@ function retornaHP(retorno) {
     pegaTextoHP.innerHTML = `${retorno}`
 }
 
-function informaDano(dano) {
+const secaoDmg = document.querySelector('.secao__damage');
+
+function informaDano(element, dano) {
     //element.classList.add("my-class")
+    
     const paragrah = document.createElement("P");
-    document.body.appendChild(paragrah);
+    secaoDmg.appendChild(paragrah);
     paragrah.classList.add("informa__dano");
+    paragrah.textContent = `vilão tomou ${dano} de dano`
 }
 
 // async function exemplo() {
@@ -42,14 +46,8 @@ function informaDano(dano) {
 
 ataque.addEventListener('click', () => {
     const danoResultante = ze.atk - vilao.def
-    informaDano(danoResultante)
-    async function afterInforma(){
-        await informaDano()
-    if(document.querySelector('.sua-classe')){
-        
-        paragrah.textContent = `vilão tomou ${dano} de dano`
-    }}
-    retornaHP(ze.atacar(vilao))
+    informaDano(secaoDmg, danoResultante)
+    retornaHP(ze.atacar(vilao))    
 })
 
 // retornaHP(ze.atacar(vilao));

@@ -4,17 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RPG</title>
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon.png">
     <link rel="stylesheet" href="/reset.css">
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <input type="submit" class="ataque" value="Ataque" id="ataque">
-    <input type="submit" class="skill" value="Skill" id="skill">
-    <hr>
-    <h1>Inimigo</h1>
-    <h2>HP</h2>
-    <h2 class="hp">100</h2>
+    <main>
+        <section class="secao__damage">
+            <input type="submit" class="ataque" value="Ataque" id="ataque">
+            <input type="submit" class="skill" value="Skill" id="skill">
+            <hr>
+            <h1>Inimigo</h1>
+            <h2>HP</h2>
+            <h2 class="hp">100</h2>
+            <hr>
+        </section>
+        <section class="secao__mochila">
+            <div class="secao__mochila-mochila">
+                <h2>Mochila de itens</h2>
+                <div class="mochila">
+                    <div class="mochila__detalhe"></div>
+                    <div class="mochila__detalhe-dois">
+                        <div class="mochila__detalhe-tres"></div>
+                    </div> 
+                </div>
+            </div>
+            <div class="secao__mochila-itens">
+                <h3>Espada</h3>
+            </div>
+        </section>
+    </main> 
 
-    <script src="/index.js"></script>
+    <script src="/index.js" type="module"></script>
 </body>
 </html>

@@ -1,15 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
+
 * {
     box-sizing: border-box;
+}
+
+:root {
+    --font: "Protest Revolution", sans-serif;
 }
 
 body {
     background-color: black;
     color: aqua;
-    
+    font-family: var(--font);
+    font-size: 3rem;
+}
+
+main {
+    margin: 3rem;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
 }
 
 .ataque, 
 .skill {
     width: 10rem;
     height: 3rem;
+}
+
+.secao__mochila {
+    display: flex;
+    gap: 4rem;
+}
+
+.secao__mochila-mochila {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.mochila {
+    width: 8rem;
+    height: 15rem;
+    padding: 2rem 1rem 1rem 1.9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    background-color: burlywood;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+}
+
+.mochila__detalhe,
+.mochila__detalhe-tres {
+    width: 4rem;
+    height: 1.5rem;
+    border: 0.6rem solid black;
+}
+
+.mochila__detalhe-dois {
+    width: 9rem;
+    height: 10rem;
+    position: absolute;
+    top: 6rem;
+    left: -0.5rem;
+    background-color: burlywood;
+    border: 0.5rem solid black;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.secao__mochila-itens {
+    width: 100%;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(195, 0, 255);
 }
