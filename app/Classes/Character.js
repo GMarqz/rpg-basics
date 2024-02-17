@@ -1,9 +1,10 @@
 
 export default class Character {
-    constructor(hp, atk, def){
+    constructor(hp, atk, def, critRate = 10){
         this.hp = hp
         this.atk = atk
         this.def = def
+        this.critRate = critRate
     }
 
     // equipment(sword){
