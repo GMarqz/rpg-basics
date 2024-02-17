@@ -1,6 +1,6 @@
 export default class Sword {
-    constructor(atack, critRate){
-        this.atack = atack
+    constructor(atk, critRate){
+        this.atk = atk
         this.critRate = critRate
     }
 }

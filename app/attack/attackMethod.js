@@ -1,7 +1,7 @@
 
 
 function atacar(atacante, espada, atacado){
-    const danoResultante = (atacante.atk + espada.atack) - atacado.def;
+    const danoResultante = (atacante.atk + espada.atk) - atacado.def;
     const hpResultante = atacado.hp - danoResultante;
     return hpResultante;
 }

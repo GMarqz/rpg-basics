@@ -1,0 +1,1 @@
+// fazer a logica do gerador de numero aleatorio pra aplicar na taxa critica
