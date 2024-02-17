@@ -1,0 +1,30 @@
+.secao__mochila__itens__column__item {
+    border-right: 1rem solid black;
+}
+
+.secao__mochila__itens__column__item-espada {
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+.secao__mochila__itens__column__stats {
+    margin-left: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1rem;
+}
+
+.secao__mochila__itens__column__status-stats {
+    font-size: 2rem;
+}
+
+.secao__mochila__itens__column__status-stats-span {
+    border-bottom: 0.5rem solid black;
+}
+
+/* ACESSAR ESSE LINK: (https://www.google.com/search?q=mochila+desenho+rpg&sca_esv=c33fa338858c7c86&rlz=1C1FKPE_enBR1091BR1091&tbm=isch&source=lnms&sa=X&ved=2ahUKEwiAg96kiLGEAxXtALkGHdeDAvkQ_AUoAXoECAEQAw&biw=1024&bih=641&dpr=1#imgrc=e4om5qvmyXs-8M) QUE É INSPIRAÇÃO PRA DESENHAR A MOCHILA EM CSS, NÃO DEVE SER MUITO DIFICIL DESENHA-LA */

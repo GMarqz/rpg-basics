@@ -1,14 +1,23 @@
+import Espada from "./itens.js";
+
+
+const firstSword = new Espada(12, 8)
+
+console.log(firstSword)
+
+
+
 const ataque = document.getElementById('ataque');
 
-class Player {
+export default class Player {
     constructor(hp, atk, def){
         this.hp = hp
         this.atk = atk
         this.def = def
     }
 
-    atacar(inimigo){
-        const danoResultante = this.atk - inimigo.def;
+    atacar(inimigo, espada){
+        const danoResultante = this.atk + espada.atk - inimigo.def;
         const hpResultante = inimigo.hp - danoResultante;
         return hpResultante;
     }
@@ -45,12 +54,11 @@ function informaDano(element, dano) {
 // exemplo();
 
 ataque.addEventListener('click', () => {
-    const danoResultante = ze.atk - vilao.def
+    const danoResultante = ze.atk + firstSword.atk - vilao.def
     informaDano(secaoDmg, danoResultante)
-    retornaHP(ze.atacar(vilao))    
+    retornaHP(ze.atacar(vilao, firstSword))    
 })
 
 // retornaHP(ze.atacar(vilao));
 
 console.log(vilao.def)
-console.log(document.querySelector('.hp'))
