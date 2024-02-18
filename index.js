@@ -1,15 +1,12 @@
 import Character from "./app/Classes/Character.js";
-import Sword from "./app/Classes/Sword.js";
+import Sword from "./backend/Equipment/Sword.js";
 import atacar from "./app/attack/attackMethod.js";
 import stringReturnDmg from "./app/attack/stringReturnDmg.js";
 import criticalHit from "./rng.js";
-import Assassin from "./app/Classes/Assassin.js";
 
 const ze = new Character(100, 20, 14, 60);
 const vilao = new Character(100, 13, 14);
 const lightSword = new Sword(17, 8);
-const koji = new Assassin(65, 45, 8)
-console.log(koji)
 
 function retornaHP(retorno) {
     const pegaTextoHP = document.querySelector('.hp');
