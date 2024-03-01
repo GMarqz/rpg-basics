@@ -1,8 +1,8 @@
 import BaseStats from "./BaseStats.js";
 
 export default class Shoes extends BaseStats {
-    constructor(hp, def, speed){
-        super(hp, def, speed);
+    constructor(id, name, hp, def, speed){
+        super(id, name, hp, def, speed);
         this.speed = speed;
     }
     

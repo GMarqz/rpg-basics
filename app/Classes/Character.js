@@ -7,14 +7,13 @@ export default class Character {
         this.critRate = critRate
     }
 
-    // equipment(sword){
-    //     this.atk + sword.atack
-    // }
+    calcularDano(sword) {
 
-    // atacar(inimigo){
-    //     const danoResultante = this.atk - inimigo.def;
-    //     const hpResultante = inimigo.hp - danoResultante;
-    //     return hpResultante;
-    // }
+        let totalDmg = this.atk;
+        if (sword && sword.atk) {
+            totalDmg += sword.atk;
+        }
+        return totalDmg;
+    }
 }
 

@@ -1,5 +1,7 @@
 export default class BaseStats {
-    constructor(hp, def, critRate){
+    constructor(id, name, hp, def, critRate){
+        this.id = id
+        this.name = name
         this.hp = hp
         this.def = def
         this.critRate = critRate
