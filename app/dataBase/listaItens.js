@@ -5,6 +5,7 @@ import IronArmour from "./items/body/IronArmour.js";
 import GoldenArmour from "./items/body/GoldenArmour.js";
 import ZombieArmour from "./items/body/ZombieArmour.js";
 import Luva from "./items/gloves/Luva.js";
+import IronSword from "./items/sword/IronSword.js";
 
 
 export const itens = {
@@ -19,8 +20,10 @@ export const itens = {
     "jy2h487pa": new ZombieArmour("jy2h487pa", "Zombie Armour", 1, 50, 0),
 
     //gloves
-    "ewxfyo30l": new Luva("ewxfyo30l", "Luva", 4, 7, 15)
+    "ewxfyo30l": new Luva("ewxfyo30l", "Luva", 4, 7, 15),
 
+    //sword
+    "bitpu6paw": new IronSword("bitpu6paw", "Iron Sword", 21, 8)
 }
 
 console.log(itens["hg51jrzr0"])
