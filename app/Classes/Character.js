@@ -1,9 +1,9 @@
-import { itens } from "../dataBase/listaItens.js";
+
 
 //Só queria dizer que enquanto eu fuçava os protótipos eternos dos mil objetos do javascript eu descobri a existência do "ondrop" que é um evento de clicar e arrastar, favor pesquisar no MDN ou w3s porque isso aí vai ser útil pra clicar e arrastar os itens pro inventário.
 //Fiz um teste pra ver se o console retornaria o helmet e body equipado, o código tá em [../../mdFiles/testeDeEquipamento.md] e precisa de importar itens da listaItens.js pra poder funcionar, e claro, precisa ser nesse arquivo aqui, só copiar e colar.
 //Ao invés de vários if no método sumHP eu descobri a existência do reduce(). Explicação sobre ele em: [mdfiles/reduce.md]
-export default class Character {
+class Character {
     constructor(id, name, hp, atk, def, critRate = 10, helmet, armour, gloves, shoes, primaryWeapon, secundaryWeapon){
         this.id = id
         this.name = name

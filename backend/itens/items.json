@@ -1,0 +1,23 @@
+{
+    "id": "",
+    "type": "",
+    "name": "",
+    "stats": {
+        "atk": "",
+        "def": "",
+        "hp": "",
+        "crit": {
+            "rate": "",
+            "damage": ""
+        },
+        "str": "",
+        "int": "",
+        "agi": "",
+        "speed": {
+            "atk": "",
+            "movement": ""
+        }
+    },
+    "price": "",
+    "description": ""
+}

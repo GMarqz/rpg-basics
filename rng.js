@@ -32,7 +32,10 @@ function criticalHit(character, sword){
     }
 }
 
+const numero = 13
+const mensagem = 'deu bom chefe'
 
+console.assert(numero * 2 === 30, mensagem)
 
 export default criticalHit;
 
