@@ -1,3 +1,11 @@
+import KamuiTuban from './items/head/KamuiTuban.js';
+import UsanGlasses from './items/head/UsanGlasses.js';
+import IronArmour from './items/body/IronArmour.js';
+import GoldenArmour from './items/body/GoldenArmour.js';
+import ZombieArmour from './items/body/ZombieArmour.js';
+import Luva from './items/gloves/Luva.js';
+import IronSword from './items/sword/IronSword.js';
+
 // {
 //     "id": ,
 //     "name": , 
@@ -9,7 +17,7 @@
 //     "description": 
 // },
 
-const itens = {
+export const itens = {
     //head
     "52315rb33": new KamuiTuban("52315rb33", "Kamui Tuban", 5, 8, 19),
     "hg51jrzr0": new UsanGlasses("hg51jrzr0", "Usan Glasses", 0, 8, 13, 20),

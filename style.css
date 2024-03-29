@@ -84,3 +84,24 @@ main {
     font-weight: bold;
     background-color: rgb(195, 0, 255);
 }
+
+.description-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+fieldset {
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove white;
+  }
+
+legend, label {
+    font-size: 22px;
+}

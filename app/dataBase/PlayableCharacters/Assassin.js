@@ -1,4 +1,4 @@
-import Character from "../../app/Classes/Character.js"
+import Character from "../../Classes/Character.js";
 
 export default class Assassin extends Character {
     constructor(hp, atk, def, critRate = 10){

@@ -35,7 +35,3 @@ class Character {
         return totalDmg;
     }
 }
-
-const archer = new Character("9ke12u219", "Teena", 12, 18, 10, 23)
-
-console.log(archer.sumHP(itens["52315rb33"], null, null, null, null))
