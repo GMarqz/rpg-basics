@@ -1,9 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap');
+
+
+:root {
+    --main-color: #430A5D;
+    --secondary-color: #8C6A5D;
+    --font-color: #EEE4B1;
+    --input-color: #5F374B;
+    --font: "Jacques Francois", serif;
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
     padding: 1rem;
-    background-color: #430A5D;
-    color: #EEE4B1;
+    background-color: var(--main-color);
+    color: var(--font-color);
+}
+
+main {
+    font-family: var(--font);
+}
+
+fieldset {
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove;
+}
+
+.form__add__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__add__item__options {
+    color: var(--font-color);
+}
+
+.form__add__item__header {
+    font-size: 2.25rem;
 }

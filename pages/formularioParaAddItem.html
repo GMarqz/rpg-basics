@@ -9,10 +9,10 @@
 </head>
 <body>
     <form action="" method="get" class="form-example">
-      <fieldset class="form__add__item">
-        <legend class="form__add__item__header">Add new item</legend>
-        <label class="form__add__item__header__select" for="item-type">Select your item's type:</label>
-        <select id="item-type" name="item-type">
+      <div class="form__add__item">
+        <h1 class="form__add__item__header">Add new item</h1>
+        <select id="item-type" name="item-type" class="form__add__item__options">
+          <option value="" disabled selected>Select your item's type</option>
           <option value="sword">Sword</option>
           <option value="shield">Shield</option>
           <option value="helmet">Helmet</option>
@@ -26,76 +26,61 @@
           <label for="name">Enter the item's name: </label>
           <input type="text" name="name" id="name" required />
         </div>
-      </fieldset>
+      </div>
     
       <fieldset>
         <legend>Stats: </legend>
         <div>
-          <label for="atk">Attack Points</label>
-          <input type="number" id="atk" name="atk">
+          <input type="number" id="atk" name="atk" placeholder="Atk">
         </div>
     
         <div>
-          <label for="def">Defense Points</label>
-          <input type="number" id="def" name="def">
+          <input type="number" id="def" name="def" placeholder="DEF">
         </div>
     
         <div>
-          <label for="hp">Health Points</label>
-          <input type="number" id="hp" name="hp">
+          <input type="number" id="hp" name="hp" placeholder="HP">
         </div>
-    
+        <div>
+          <input type="number" id="str" name="str" placeholder="Str">
+        </div>
+        <div>
+          <input type="number" id="int" name="int" placeholder="Int">
+        </div>
+        <div>
+          <input type="number" id="agi" name="agi" placeholder="Agi">
+        </div>
+
         <legend>Critical Stats</legend>
         <div>
-          <label for="crit-rate">Critical Rate</label>
-          <input type="number" id="crit-rate" name="crit-rate">
+          <input type="number" id="crit-rate" name="crit-rate" placeholder="Rate">
         </div>
         <div>
-          <label for="crit-dmg">Critical Damage</label>
-          <input type="number" id="crit-dmg" name="crit-dmg">
-        </div>
-    
-        <div>
-          <label for="str">Strength Points</label>
-          <input type="number" id="str" name="str">
-        </div>
-    
-        <div>
-          <label for="int">Intelligence Points</label>
-          <input type="number" id="int" name="int">
-        </div>
-    
-        <div>
-          <label for="agi">Agility Points</label>
-          <input type="number" id="agi" name="agi">
+          <input type="number" id="crit-dmg" name="crit-dmg" placeholder="Dmg">
         </div>
     
         <legend>Speed Points</legend>
         <div>
-          <label for="atk-spd">Attack Speed Points</label>
-          <input type="number" id="atk-spd" name="atk-spd">
+          <input type="number" id="atk-spd" name="atk-spd" placeholder="Atk">
         </div>
         <div>
-          <label for="movement-spd">Movement Speed Points</label>
-          <input type="number" id="movement-spd" name="movement-spd">
+          <input type="number" id="movement-spd" name="movement-spd" placeholder="Mvt">
         </div>
       </fieldset>
     
       <fieldset>
         <div>
-          <label for="price">Set your item's price: </label>
-          <input type="number" id="price" name="price">
+          <input type="text" id="creator" name="creator" placeholder="Creator">
         </div>
-    
+        <div>
+          <input type="number" id="price" name="price" placeholder="Price">
+        </div>
+
         <div>
           <label for="description">Give your item's a description:</label>
           <input type="text" id="description" name="description">
         </div>
     
-        <div>
-          <label for="creator">Inform your item's creator</label>
-          <input type="text" id="creator" name="creator">
-        </div>
       </fieldset>
       <div class="form-example">
         <input type="submit" value="Save Item" />
