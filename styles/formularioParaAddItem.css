@@ -23,6 +23,18 @@ main {
     font-family: var(--font);
 }
 
+.form-example {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 1.5rem;
+}
+
+.form__add__item__header__div {
+    display: flex;
+    justify-content: center;
+}
+
 fieldset {
     display: block;
     margin-left: 2px;
@@ -37,12 +49,42 @@ fieldset {
 .form__add__item {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
 }
 
-.form__add__item__options {
+.enter__name, .select__type  {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.form__input__text{
+    width: 17.188rem;
     color: var(--font-color);
 }
 
 .form__add__item__header {
     font-size: 2.25rem;
+}
+
+.fieldset__stats {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    gap: 0.5rem;
+}
+
+.stat__input, .form__input, .form__add__item__options, .form__input__text, .form__input__description {
+    background-color: var(--input-color);
+    border-radius: 0.625rem;
+}
+
+.stat__input {
+    width: 5.813rem;
+}
+
+.form__input__description {
+    width: 19.563rem;
+    height: 17.063rem;
+    background-color: var(--input-color);
 }

@@ -8,84 +8,102 @@
     <link rel="stylesheet" href="/styles/formularioParaAddItem.css">
 </head>
 <body>
+  <main>
     <form action="" method="get" class="form-example">
       <div class="form__add__item">
+        <div class="form__add__item__header__div">
         <h1 class="form__add__item__header">Add new item</h1>
-        <select id="item-type" name="item-type" class="form__add__item__options">
-          <option value="" disabled selected>Select your item's type</option>
-          <option value="sword">Sword</option>
-          <option value="shield">Shield</option>
-          <option value="helmet">Helmet</option>
-          <option value="upper-body">Upper Body</option>
-          <option value="lower-body">Lower Body</option>
-          <option value="gloves">Gloves</option>
-          <option value="shoes">Shoes</option>
-        </select>
-    
-        <div class="form-example">
-          <label for="name">Enter the item's name: </label>
-          <input type="text" name="name" id="name" required />
+      </div>
+        <div class="enter__name">
+          <label for="name">Enter the item's name:</label>
+          <input class="form__input__text" type="text" name="name" id="name" required />
+        </div>
+        <div class="select__type">
+          <label for="item-type">Select your item's type:</label>
+          <select id="item-type" name="item-type" class="form__input__text">
+            <option value="" disabled selected>Choose your item's type</option>
+            <option value="sword">Sword</option>
+            <option value="shield">Shield</option>
+            <option value="helmet">Helmet</option>
+            <option value="upper-body">Upper Body</option>
+            <option value="lower-body">Lower Body</option>
+            <option value="gloves">Gloves</option>
+            <option value="shoes">Shoes</option>
+          </select>
         </div>
       </div>
-    
-      <fieldset>
-        <legend>Stats: </legend>
+      <fieldset class="fieldset__stats">
+        <legend>Stats:</legend>
         <div>
-          <input type="number" id="atk" name="atk" placeholder="Atk">
+          <label for="atk">Atk:</label>
+          <input class="stat__input" type="number" id="atk" name="atk">
         </div>
-    
+  
         <div>
-          <input type="number" id="def" name="def" placeholder="DEF">
+          <label for="def">DEF:</label>
+          <input class="stat__input" type="number" id="def" name="def">
         </div>
-    
+  
         <div>
-          <input type="number" id="hp" name="hp" placeholder="HP">
-        </div>
-        <div>
-          <input type="number" id="str" name="str" placeholder="Str">
-        </div>
-        <div>
-          <input type="number" id="int" name="int" placeholder="Int">
+          <label for="hp">HP:</label>
+          <input class="stat__input" type="number" id="hp" name="hp">
         </div>
         <div>
-          <input type="number" id="agi" name="agi" placeholder="Agi">
+          <label for="str">Str:</label>
+          <input class="stat__input" type="number" id="str" name="str">
         </div>
-
+        <div>
+          <label for="int">Int:</label>
+          <input class="stat__input" type="number" id="int" name="int">
+        </div>
+        <div>
+          <label for="agi">Agi:</label>
+          <input class="stat__input" type="number" id="agi" name="agi">
+        </div>
+  
         <legend>Critical Stats</legend>
         <div>
-          <input type="number" id="crit-rate" name="crit-rate" placeholder="Rate">
+          <label for="crit-rate">Rate:</label>
+          <input class="stat__input" type="number" id="crit-rate" name="crit-rate">
         </div>
         <div>
-          <input type="number" id="crit-dmg" name="crit-dmg" placeholder="Dmg">
+          <label for="crit-dmg">Dmg:</label>
+          <input class="stat__input" type="number" id="crit-dmg" name="crit-dmg">
         </div>
-    
+  
         <legend>Speed Points</legend>
         <div>
-          <input type="number" id="atk-spd" name="atk-spd" placeholder="Atk">
+          <label for="atk-spd">Atk:</label>
+          <input class="stat__input" type="number" id="atk-spd" name="atk-spd">
         </div>
         <div>
-          <input type="number" id="movement-spd" name="movement-spd" placeholder="Mvt">
+          <label for="movement-spd">Mvt:</label>
+          <input class="stat__input" type="number" id="movement-spd" name="movement-spd">
         </div>
       </fieldset>
-    
+  
       <fieldset>
         <div>
-          <input type="text" id="creator" name="creator" placeholder="Creator">
+          <label for="creator">Creator:</label>
+          <input class="form__input" type="text" id="creator" name="creator">
         </div>
         <div>
-          <input type="number" id="price" name="price" placeholder="Price">
+          <label for="price">Price:</label>
+          <input class="form__input" type="number" id="price" name="price">
         </div>
-
+  
         <div>
-          <label for="description">Give your item's a description:</label>
-          <input type="text" id="description" name="description">
+          <label for="description">Description:</label>
+          <input class="form__input__description" type="text" id="description" name="description">
         </div>
-    
+  
       </fieldset>
       <div class="form-example">
-        <input type="submit" value="Save Item" />
+        <input class="form__input" type="submit" value="Save Item" />
       </div>
     </form>
+  </main>
+  
 </body>
 </html>
 
