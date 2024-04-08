@@ -8,7 +8,7 @@
 
 const botao = document.getElementById('form__input')
 
-botao.addEventListener('click', rollDice(getRandomInt()))
+// botao.addEventListener('click', setInterval(rollDice(getRandomInt()), 5000))
 
 
 function getRandomInt(){
@@ -35,14 +35,12 @@ function rollDice(randomInt) {
         function horaDaVerdade(){
             return Math.floor(Math.random() * 101)
         }
-
-        function condicional(){
-            if(horaDaVerdade() >= 50){
+        if(horaDaVerdade() >= 50){
                 console.log('logica do numero 6')
-            } else {
+        } else {
                 console.log('logica do 5 porque o 6 falhou KKKK')
-            }
         }
-        setInterval(condicional, 5000)
     }
 }
+
+console.log(setInterval(rollDice(getRandomInt()), 5000))
