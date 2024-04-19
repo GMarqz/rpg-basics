@@ -1,4 +1,4 @@
-import Gloves from "../../../../backend/Equipment/Gloves.js";
+import Gloves from "../../Equipment/Gloves.js";
 
 export default class Luva extends Gloves {
     constructor(id, name, hp, def, critRate){

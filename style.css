@@ -7,6 +7,7 @@
 
 :root {
     --font: "Protest Revolution", sans-serif;
+    --white: #ffffff;
 }
 
 body {
@@ -104,4 +105,9 @@ fieldset {
 
 legend, label {
     font-size: 22px;
+}
+
+
+.div__show__status {
+    border: 10px solid var(--white);
 }

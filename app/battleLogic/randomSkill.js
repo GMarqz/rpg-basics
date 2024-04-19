@@ -16,29 +16,29 @@ function getRandomInt(){
 }
 
 function rollDice(randomInt) {
-    if(randomInt === 1){
-        console.log('logica de ganhar um turno');
+    if(randomInt === 0){
+        randomInt++;
+    } else if(randomInt === 1){
+        console.log('Você ganhou mais um turno.');
+    } else if(randomInt === 2){
+        console.log('No próximo turno você poderá atacar duas vezes.');
+    } else if(randomInt === 3){
+        console.log('O próximo ataque que você levar terá dano reduzido');
+    } else if(randomInt === 4){
+        console.log('Ataque aumentado em 40%. Precisão reduzida em 40%.');
+    } else if(randomInt === 5){
+        console.log('Você ganhou 50g.');
     }
-    if(randomInt === 2){
-        console.log('logica de atacar duas vezes');
-    }
-    if(randomInt === 3){
-        console.log('logica do numero 3');
-    }
-    if(randomInt === 4){
-        console.log('logica do numero 4');
-    }
-    if(randomInt === 5){
-        console.log('logica do numero 5');
-    }
-    if(randomInt === 6){
+    while(randomInt === 6){
         function horaDaVerdade(){
             return Math.floor(Math.random() * 101)
         }
         if(horaDaVerdade() >= 50){
-                console.log('logica do numero 6')
+                console.log('O ataque da sua arma foi dobrado. Você não pode mais usar o Roll Dice nessa batalha.')
+                break;
         } else {
-                console.log('logica do 5 porque o 6 falhou KKKK')
+                console.log('Você ganhou 25g.')
+                break;
         }
     }
 }

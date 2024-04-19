@@ -1,14 +1,8 @@
+import { itens } from "../dataBase/listaItens.js";
+
+const itensDaLoja = itens['52315rb33', '9y0bcl7gu', 'ewxfyo30l', '677421388a5da'];
 
 
-export default class Shop {
-    constructor(name, itensAVenda, inventarioDaLoja){
-        this.name = name
-        this.itensAVenda = itensAVenda
-        this.inventarioDaLoja = inventarioDaLoja
-    }
-}
-
-const OkaShop = new Shop("Oka Shop", itens, 0)
 
 //PROJETO PAUSADO TEMPORARIAMENTE. VOLTO APÓS APRENDER A FAZER API COM DJANGO E APRENDER A MEXER COM BANCO DE DADOS.
 
