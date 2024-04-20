@@ -28,4 +28,11 @@ function createParagraph(elementFather, cssClassName, text){
     createParagraph.textContent = text
 }
 
-export { father, createSection, createDiv, createHeading, createParagraph };
+function createList(elementFather, listType, cssClassName, text){
+    const createList = document.createElement(listType);
+    createList.className = cssClassName;
+    elementFather.appendChild(createList)
+    createList.textContent = text
+}
+
+export { father, createSection, createDiv, createHeading, createParagraph, createList };

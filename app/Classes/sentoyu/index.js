@@ -1,5 +1,6 @@
 import Character from "../Character.js";
 import { itens } from "../../dataBase/listaItens.js";
+import { father, createSection ,createDiv, createHeading, createParagraph, createList } from "../../functions/createElement.js";
 
 export class Sentoyu extends Character {
     constructor(id, name, hp, atk, def, critRate = 10, helmet, armour, gloves, shoes, primaryWeapon, secundaryWeapon){
@@ -17,39 +18,22 @@ console.log(novoSentoyu)
 
 let btnMode = false;
 
-
 const statBtn = document.getElementById('showStats')
 
 function showCharacterStats(){
+    createDiv(document.body, "div__show__stats")
+    createHeading(father(".div__show__stats"), "H1","div__show__stats", "CHARACTER STATS")
 
-    function createListItem(element, text){
-        const listItem = document.createElement("LI");
-        listItem.className = "div__show__status__list__item";
-        element.appendChild(listItem)
-        listItem.textContent = text
-    }
+    createList(father(".div__show__stats"), "OL", "div__show__status__list")
 
-    const createDivShowStatus = document.createElement("DIV");
-    createDivShowStatus.className = "div__show__status";
-    document.body.appendChild(createDivShowStatus);
-
-    const createHeading = document.createElement("H1");
-    createHeading.className = "div__show__status__heading";
-    createDivShowStatus.appendChild(createHeading);
-    createHeading.textContent = "CHARACTER STATUS";
-
-    const createList = document.createElement("OL");
-    createList.className = "div__show__status__list";
-    createDivShowStatus.appendChild(createList);
-
-    createListItem(createList, `HP: ${novoSentoyu.hp}`);
-    createListItem(createList, `ATK: ${novoSentoyu.atk}`);
-    createListItem(createList, `DEF: ${novoSentoyu.def}`);
-    createListItem(createList, `Crit. Rate: ${novoSentoyu.critRate}`);
+    createList(father(".div__show__status__list"), "LI", "div__show__status__list__item", `HP: ${novoSentoyu.hp}`);
+    createList(father(".div__show__status__list"), "LI", "div__show__status__list__item", `ATK: ${novoSentoyu.atk}`);
+    createList(father(".div__show__status__list"), "LI", "div__show__status__list__item", `DEF: ${novoSentoyu.def}`);
+    createList(father(".div__show__status__list"), "LI", "div__show__status__list__item", `Crit. Rate: ${novoSentoyu.critRate}`);
 }
 
 statBtn.addEventListener('click', () => {
-    const div = document.querySelector(".div__show__status")
+    const div = document.querySelector(".div__show__stats")
     if(btnMode === false && !div){
         showCharacterStats()
         return btnMode = true;
