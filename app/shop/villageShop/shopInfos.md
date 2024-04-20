@@ -1,8 +1,6 @@
-import { itens } from "../dataBase/listaItens.js";
+# Infomrações sobre os shop
 
-const itensDaLoja = itens['52315rb33', '9y0bcl7gu', 'ewxfyo30l', '677421388a5da'];
-
-
+Esse texto aqui tava no arquivo VillageShop.js e eu escrevi 2 meses atrás (feverero 2024) antes de fazer o shop em si.
 
 //PROJETO PAUSADO TEMPORARIAMENTE. VOLTO APÓS APRENDER A FAZER API COM DJANGO E APRENDER A MEXER COM BANCO DE DADOS.
 
@@ -23,3 +21,5 @@ const itensDaLoja = itens['52315rb33', '9y0bcl7gu', 'ewxfyo30l', '677421388a5da'
 // Deixar do mesmo estilo que ja está, não precisa mudar, mas, na coluna da direita, quando nenhum item tiver sido clicado, deixar escrito uma mensagem: "Selecione um item para comprar"
 // Aquele botão equipar da coluna da esquerda, passar ele pra coluna da direita e mudar pra 'comprar'
 // Quando um item for selecionado, no lugar de 'equips' vai ficar o nome do item, e a lista embaixo vai ser os status. Precisa ter uma linha divisória pra ficar o preço embaixo dos status. Encontrar um bom lugar pra deixar uma descrição pequena do item. E um botão 'ver descrição completa' que abre uma caixa de descrição maior, deixando o resto da div opaca, semelhante ao 'menu pause' do jogo connect four.
+
+Passei o texto pra cá porque tava ocupando muito espaço lá.

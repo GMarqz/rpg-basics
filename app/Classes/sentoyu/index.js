@@ -46,10 +46,6 @@ function showCharacterStats(){
     createListItem(createList, `ATK: ${novoSentoyu.atk}`);
     createListItem(createList, `DEF: ${novoSentoyu.def}`);
     createListItem(createList, `Crit. Rate: ${novoSentoyu.critRate}`);
-    
-
-
-    console.log('working!')
 }
 
 statBtn.addEventListener('click', () => {
