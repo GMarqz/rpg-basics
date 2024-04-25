@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap');
 @import "/styles/mocila.css";
+@import "/styles/villageShopTable.css";
 
 * {
     box-sizing: border-box;

@@ -19,23 +19,28 @@ import IronSword from './items/sword/IronSword.js';
 // },
 
 export const itens = {
-    //head
-    "52315rb33": new KamuiTuban("52315rb33", "Kamui Tuban", 5, 8, 19),
-    "hg51jrzr0": new UsanGlasses("hg51jrzr0", "Usan Glasses", 0, 8, 13, 20),
 
-    //armour
-    "n3wfp013t": new IronArmour("n3wfp013t", "Iron Armour", 75, 32, 0),
-    "9y0bcl7gu": new GoldenArmour("9y0bcl7gu", "Golden Armour", 80, 35, 4),
-    "jy2h487pa": new ZombieArmour("jy2h487pa", "Zombie Armour", 1, 50, 0),
+    head: [
+        new KamuiTuban("52315rb33", "Kamui Tuban", 5, 8, 19),
+        new UsanGlasses("hg51jrzr0", "Usan Glasses", 0, 8, 13, 20)
+    ],
 
-    //gloves
-    "ewxfyo30l": new Luva("ewxfyo30l", "Luva", 4, 7, 15),
+    armour: [
+        new IronArmour("n3wfp013t", "Iron Armour", 75, 32, 0),
+        new GoldenArmour("9y0bcl7gu", "Golden Armour", 80, 35, 4),
+        new ZombieArmour("jy2h487pa", "Zombie Armour", 1, 50, 0)
+    ],
 
-    //shoes
+    gloves: [
+        new Luva("ewxfyo30l", "Luva", 4, 7, 15)
+    ],
 
-    "677421388a5da": new WingShoes("677421388a5da", "Wing Shoes", 6, 7, 10),
+    shoes: [
+        new WingShoes("677421388a5da", "Wing Shoes", 6, 7, 10)
+    ],
 
-    //sword
-    "bitpu6paw": new IronSword("bitpu6paw", "Iron Sword", 21, 8)
+    sword: [
+        new IronSword("bitpu6paw", "Iron Sword", 21, 8)
+    ]
 }
 
