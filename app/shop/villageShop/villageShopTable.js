@@ -18,8 +18,8 @@ function initTable(shopItens){
 
     for(const item of shopItens){
         createTh(father(".village__shop__table__body__tr"), "row", "village__shop__table__body__th", `${item.name}`)
-        createTd(father(".village__shop__table__body__tr"), "village__shop__table__body__td", `${item.hp}`)
         createTd(father(".village__shop__table__body__tr"), "village__shop__table__body__td", `${item.id}`)
+        createTd(father(".village__shop__table__body__tr"), "village__shop__table__body__td", `${item.hp}`)
     }
 
     createTFoot(father(".village__shop__table"), "village__shop__table__foot")

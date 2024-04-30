@@ -25,15 +25,16 @@ td {
     padding: 8px 10px;
 }
 
+
 td:last-of-type {
     text-align: center;
 }
 
-tbody>tr:nth-of-type(even) {
+/* .village__shop__table__body>.village__shop__table__body__tr:nth-of-type(even) {
     display: flex;
     flex-direction: column;
     background-color: rgb(237 238 242);
-}
+} */
 
 tfoot th {
     text-align: right;
