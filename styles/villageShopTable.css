@@ -1,45 +1,47 @@
+:root {
+    --background-color: #FFFBDA;
+    --thead-font-color: #ED9455;
+    --itens-color: #FFBB70;
+}
+
 .village__shop__table {
     display: flex;
     flex-direction: column;
-    border-collapse: collapse;
-    border: 2px solid rgb(140 140 140);
-    font-family: sans-serif;
-    font-size: 0.8rem;
-    letter-spacing: 1px;
+    border: 4mm ridge rgba(220, 152, 50, 0.6);
+    background-color: var(--background-color);
 }
 
 .village__shop__table__caption {
-    caption-side: top;
-    padding: 10px;
-    font-weight: bold;
+    font-size: 5rem;
+    color: darkorange;
 }
 
-.village__shop__table__thead,
-.village__shop__table__tfoot {
-    background-color: rgb(228 240 245);
+.village__shop__table__head {
+    color: var(--thead-font-color);
 }
 
-th,
-td {
-    border: 1px solid rgb(160 160 160);
-    padding: 8px 10px;
-}
-
-
-td:last-of-type {
-    text-align: center;
-}
-
-/* .village__shop__table__body>.village__shop__table__body__tr:nth-of-type(even) {
+.village__shop__table__body {
     display: flex;
     flex-direction: column;
-    background-color: rgb(237 238 242);
-} */
-
-tfoot th {
-    text-align: right;
+    justify-content: start;
 }
 
-tfoot td {
-    font-weight: bold;
+.village__shop__table__body__tr {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.village__shop__table__body__tr__div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.village__shop__table__body__th {
+    color: var(--itens-color);
+}
+
+.village__shop__table__body__td {
+    color: var(--itens-color);
 }
