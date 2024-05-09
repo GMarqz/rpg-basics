@@ -1,3 +1,10 @@
+/* 
+ESTILIZAR TABELAS GUIAS:
+https://www.youtube.com/watch?v=iuSKGuWWNGA
+https://www.youtube.com/watch?v=Ay8BXbAmEYM
+https://www.youtube.com/watch?v=biI9OFH6Nmg
+ */
+
 :root {
     --background-color: #FFFBDA;
     --thead-font-color: #ED9455;
@@ -5,8 +12,10 @@
 }
 
 .village__shop__table {
+    padding: 3rem;
     display: flex;
     flex-direction: column;
+    gap: 2.5rem;
     border: 4mm ridge rgba(220, 152, 50, 0.6);
     background-color: var(--background-color);
 }

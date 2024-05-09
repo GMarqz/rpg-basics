@@ -18,10 +18,15 @@ function initTable(shopItens){
     createTr(father(".village__shop__table__body"), "village__shop__table__body__tr")
 
     for(const item of shopItens){
-        const div = document.querySelector(".village__shop__table__body__tr__div")
-        if(!div){
-            new Item(item).initBlock()
-        }
+        new Item(item).initBlock()
+        
+        
+        const templateParentClassName = `.village__shop__table__body__tr__div__${item.id}` 
+        const stringParentClassName = templateParentClassName.toString()
+        const getDivClassName = document.querySelector(stringParentClassName)
+        // getDivClassName.setAttribute("style", "display: flex")
+        getDivClassName.style.display = "flex";
+        getDivClassName.style.justifyContent = "space-between";
     }
 
     createTFoot(father(".village__shop__table"), "village__shop__table__foot")
