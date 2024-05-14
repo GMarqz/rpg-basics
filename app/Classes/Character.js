@@ -4,7 +4,7 @@
 //Fiz um teste pra ver se o console retornaria o helmet e body equipado, o código tá em [../../mdFiles/testeDeEquipamento.md] e precisa de importar itens da listaItens.js pra poder funcionar, e claro, precisa ser nesse arquivo aqui, só copiar e colar.
 //Ao invés de vários if no método sumHP eu descobri a existência do reduce(). Explicação sobre ele em: [mdfiles/reduce.md]
 export default class Character {
-    constructor(id, name, hp, atk, def, critRate = 10, helmet, armour, gloves, shoes, primaryWeapon, secundaryWeapon){
+    constructor(id, name, hp, atk, def, evasion, speed, critRate = 10, helmet, armour, gloves, shoes, primaryWeapon, secundaryWeapon){
         this.id = id
         this.name = name
         this.helmet = helmet
@@ -17,6 +17,8 @@ export default class Character {
         this.hp = this.sumHP()
         this.atk = this.sumAtk()
         this.def = this.sumDef()
+        this.evasion = this.sumEvasion()
+        this.speed = this.sumSpeed()
         this.critRate = this.sumCritRate()
     }
 
@@ -33,6 +35,16 @@ export default class Character {
     sumDef(){
         const items = [this.helmet, this.armour, this.gloves, this.shoes, this.primaryWeapon, this.secundaryWeapon];
         return items.reduce((totalDef, item) => totalDef + (item && item.def ? item.def : 0), this.def || 0);
+    }
+
+    sumEvasion(){
+        const items = [this.helmet, this.armour, this.gloves, this.shoes, this.primaryWeapon, this.secundaryWeapon];
+        return items.reduce((totalEvasion, item) => totalEvasion + (item && item.evasion ? item.evasion : 0), this.evasion || 0);
+    }
+
+    sumSpeed(){
+        const items = [this.helmet, this.armour, this.gloves, this.shoes, this.primaryWeapon, this.secundaryWeapon];
+        return items.reduce((totalSpeed, item) => totalSpeed + (item && item.speed ? item.speed : 0), this.speed || 0);
     }
 
     sumCritRate(){
